@@ -28,8 +28,6 @@ export class PineconeStore extends VectorStore {
     this.embeddings = embeddings;
     this.textKey = args.textKey ?? "text";
     this.namespace = args.namespace;
-
-    console.log(this.textKey);
   }
 
   async addDocuments(documents: Document[], ids?: string[]): Promise<void> {
